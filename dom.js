@@ -11,12 +11,11 @@ function mouseOut() {
     document.getElementById("doge").innerHTML = "Woof!";
 }
 
-document.getElementById("doge").addEventListener("click", function(){
-    var x = document.createElement("IMG");
-    x.setAttribute("src", "doge.png");
-    x.setAttribute("width", "304");
-    x.setAttribute("height", "228");
-    document.body.appendChild(x);
-    
-})
-
+document.getElementById("doge").addEventListener("click", picture);
+function picture() {
+if (document.getElementById("picture").style.display === "block") {
+document.getElementById("picture").style.display = "none";
+} else {
+document.getElementById("picture").style.display = "block";
+}
+}
